@@ -1,0 +1,156 @@
+<!-- autor: Carlos Peña DNI 95785769-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Trabajo Práctico Integrador: FrontEnd</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pl-4 pr-4">
+        <span class="navbar-brand">
+            <img src="img/codoacodo.png" width="100px">
+            Conf Bs As
+        </span>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">La conferencia<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Los oradores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conviértete en orador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="linkTicket">Comprar tickets</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <div class="container">
+    <div class="card-deck mt-2 p-4 text-center" style="font-size:1.5em;" >
+        <div class="card border-primary"  >
+          <div class="card-body">
+            <h2 class="card-title">Estudiante</h2>
+            <p class="card-text">Tienen un descuento</p>
+            <h2 class="card-text">%80</h2>
+            <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+          </div>
+        </div>
+        <div class="card border-primary">
+          <div class="card-body">
+            <h2 class="card-title">Trainee</h2>
+            <p class="card-text">Tienen un descuento</p>
+            <h2 class="card-text">%50</h2>
+            <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+          </div>
+        </div>
+        <div class="card border-warning">
+          <div class="card-body">
+            <h2 class="card-title">Junior</h2>
+            <p class="card-text">Tienen un descuento</p>
+            <h2 class="card-text">%15</h2>
+            <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+          </div>
+        </div>
+      </div> 
+
+  
+
+
+
+  <div class="text-center"> <small>VENTA</small>
+    <h1>VALOR DE TICKET $200</h1>
+  </div>
+ 
+  <form>
+  <div class="row justify-content-center">
+    <div class="mb-3 col-3">
+        <label for="nombre" class="form-label"></label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+    </div>
+    <div class="mb-3 col-3">
+        <label for="apellido" class="form-label"></label>
+        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="mb-3 col-6">
+        <label for="correo" class="form-label"></label>
+        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo">
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="mb-3 col-3">
+        <label for="cantidad" class="form-label">Cantidad</label>
+        <input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="cantidad">
+    </div>
+    <div class="mb-3 col-3">
+        <label for="categoria" class="form-label">Categoría</label>
+        <select class="form-control" id="categoria" name="categoria">
+            <option>Estudiante</option>
+            <option>Trainee</option>
+            <option>Junior</option>
+          </select>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="mb-3 col-6">
+<div class="col p-3 bg-info text-white" id="infoPagar" name="infoPagar">Total a pagar: $</div>
+</div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-3">
+            <button type="button" class="btn btn-success" style="width:100%;" id="borrar" name="borrar">Borrar</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-success" style="width:100%;" id="resumen" name="resumen">Resumen</button>
+        </div>
+    </div>
+</div>
+</form>
+
+
+</div>
+<footer>
+	<div class="container-fluid mt-2 p-2 bg-dark">
+		<div class="container h-100">
+			<div class="row h-100 text-center">
+				<div class="col"><a href="#"> <p class="text-light">Preguntas frecuentes</p></a></div>
+				<div class="col"><a href="#"> <p class="text-light">Contáctanos</p></a></div>
+				<div class="col"><a href="#"> <p class="text-light">Prensa</p></a></div>
+				<div class="col"><a href="#"> <p class="text-light">Conferencias</p></a></div>
+				<div class="col"><a href="#"> <p class="text-light">Términos y condiciones</p></a></div>
+				<div class="col"><a href="#"><p class="text-light">Privacidad</p></a></div>
+				<div class="col"><a href="#"><p class="text-light">Estudiantes</p></a></div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
